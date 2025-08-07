@@ -9,6 +9,10 @@ import InfoCard from "./_components/InfoCard";
 import { TbLineDashed } from "react-icons/tb";
 import MissionInfo from "./_components/MissionInfo";
 import DiscoverSection from "./_components/DiscoverSection";
+import CharityServices from "./_components/CharityServices";
+import { RiDoubleQuotesL } from "react-icons/ri";
+import { ImQuotesRight } from "react-icons/im";
+import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -127,18 +131,24 @@ export default function HomePage() {
         </div>
       </section>
       <section className="bg-white h-dvh">
+        <CharityServices/>
 
       </section>
 
       {/* Leadership Section */}
-      <section id="leadership" className="py-16  text-center">
-        <h2 className="text-3xl font-bold mb-8">OUR LEADERSHIP</h2>
-        <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
+      <section id="leadership" className="py-16 bg-white  text-center">
+        <h2 className="text-6xl font-bebas  font-bold mb-5">OUR LEADERSHIP</h2>
+        <p className="mb-12 text-stone-700 mx-auto ">Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium <br />laboriosam aspernatur ipsam maxime eveniet?</p>
+        <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto ">
           {[1, 2, 3].map((id) => (
-            <div key={id} className="p-4 bg-white shadow rounded-lg">
-              <Image src="/avatar.png" alt="Leader" width={80} height={80} className="mx-auto rounded-full" />
+            <div key={id} className="p-4 flex flex-col justify-center items-center bg-white border border-gray-200 pt-5 rounded-lg">
+              <div className="size-24 relative rounded-full overflow-hidden mb-10">
+
+              <Image src="/imgs/prof-2.jpg" alt="Leader" fill  className="object-cover" />
+              </div>
               <h4 className="mt-4 font-bold">John Doe</h4>
-              <p className="text-sm text-gray-600">Executive Director</p>
+              <p className="text-xs font-bold font-karla text-gray-600 uppercase">Executive Director</p>
+              <p className=" px-4 text-sm leading-5 mt-3 mb-4 font-karla">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, ex voluptatum repudiandae recusandae unde rem? Repellat, neque sapiente. Vitae asperiores ducimus quas delectus molestiae?</p>
               <div className="flex justify-center gap-3 mt-2 text-orange-600">
                 <FaFacebookF /><FaTwitter /><FaLinkedinIn />
               </div>
@@ -148,15 +158,24 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 bg-orange-200 text-center">
+      <section className="py-16 h-dvh bg-orange-200 text-center">
         <h2 className="text-3xl font-bold mb-10">TESTIMONIAL</h2>
         <div className="grid sm:grid-cols-3 gap-4 max-w-6xl mx-auto">
           {[1, 2, 3].map((id) => (
-            <div key={id} className="bg-white p-6 rounded-lg shadow">
-              <p className="text-sm text-gray-600">
-                "I am so grateful for the support I received from this foundation. It has changed my life!"
+            <div key={id} className="bg-white relative flex flex-col justify-center items-center p-6 size-fit rounded-lg shadow">
+              <BiSolidQuoteAltLeft className="size-9 text-orange-600 absolute left-2 top-0"/>
+              <BiSolidQuoteAltRight className="size-9 text-orange-600 absolute right-2 bottom-0"/>
+              <p className="text-lg px-3 text-gray-600">
+                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae dicta magnam nam, sed debitis quo tenetur ullam sunt laudantium harum esse exercitationem excepturi. Voluptatibus enim aperiam odit, deserunt libero a quos nihil?"
               </p>
-              <h4 className="mt-4 font-bold">Jane Smith</h4>
+              <div className="flex flex-col items-center justify-center mt-4">
+
+              <div className="size-16 relative rounded-full overflow-hidden ">
+
+              <Image src="/imgs/prof-3.jpg" alt="Leader" fill  className="object-cover" />
+              </div>
+              <h4 className="text-center font-bold">Jane Smith</h4>
+              </div>
             </div>
           ))}
         </div>
