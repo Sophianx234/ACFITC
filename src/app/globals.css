@@ -1,26 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Darumadrop+One&family=Edu+NSW+ACT+Cursive:wght@400..700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Karla:ital,wght@0,200..800;1,200..800&family=Oswald:wght@200..700&family=Rubik+Dirt&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Archivo+Black&family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Bebas+Neue&family=Caveat+Brush&family=Concert+One&family=Fredericka+the+Great&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lilita+One&family=Rubik+Mono+One&family=Sacramento&family=TikTok+Sans:opsz,wght@12..36,300..900&display=swap');
+
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@layer utilities {
+  .scrollbar-hide {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE and Edge */
+  }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari, Opera */
   }
 }
+.form-error {
+  @apply text-xs bg-red-200 py-2 font-medium text-red-950 rounded-lg mt-2 px-3;
+}
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@theme {
+  --font-inter: "Inter", "sans-serif";
+  --font-anton: "Anton", "sans-serif";
+  --font-darum: "Darumadrop One", sans-serif;
+  --font-playfair: "Playfair Display", sans-serif;
+  --font-oswald: "Oswald", "sans-serif";
+  --font-karla: "Karla";
+  --font-rubik: "Rubik Dirt";
+  --font-rubik-mono: "Rubik Mono One";
+  --font-lilita: "Lilita One";
+  --font-concert: "Concert One";
+  --font-archivo: "Archivo Black";
+  --font-bebas: "Bebas Neue";
+  --font-fredricka: "Fredericka the Great";
+  --font-sacremento: "Sacramento";
+  --font-amatic: "Amatic SC";
+  --font-caveat: "Caveat Brush";
 }
