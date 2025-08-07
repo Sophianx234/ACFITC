@@ -4,6 +4,7 @@ import { FaBars, FaTimes, FaFacebookF, FaTwitter, FaLinkedinIn } from "react-ico
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "./_components/SliderComponent";
+import Navbar from "./_components/Navbar";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,7 +12,7 @@ export default function HomePage() {
   return (
     <main className="font-sans">
       {/* Navbar */}
-      <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
+      {/* <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
         <div className="max-w-7xl mx-auto px-12 py-10 flex justify-between items-center">
           <h1 className="text-3xl tracking-tighter font-amatic font-bold text-orange-600 uppercase">Center for Islam and culture</h1>
           <div className="md:hidden">
@@ -36,7 +37,7 @@ export default function HomePage() {
             <li><a href="#contact">Contact</a></li>
           </ul>
         )}
-      </nav>
+      </nav> */}
 
       {/* Hero Section */}
       {/* <section className="pt-28 bg-orange-100 text-center md:text-left ">
@@ -55,10 +56,10 @@ export default function HomePage() {
         </div>
         </div>
       </section> */}
-      <div className="h-dvh">
+      <Navbar/>
 
       <Slider/>
-      </div>
+      
 
       {/* Mission Section */}
       <section id="mission" className="py-16 bg-orange-200 text-center">

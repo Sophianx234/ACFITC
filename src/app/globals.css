@@ -16,6 +16,14 @@
 .form-error {
   @apply text-xs bg-red-200 py-2 font-medium text-red-950 rounded-lg mt-2 px-3;
 }
+.swiper-pagination-progressbar {
+  background: black !important;
+  height: 4px !important;
+}
+
+.swiper-pagination-progressbar-fill {
+  background: orangered !important;
+}
 
 @theme {
   --font-inter: "Inter", "sans-serif";
