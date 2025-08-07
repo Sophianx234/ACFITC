@@ -1,16 +1,25 @@
 "use client";
 import { useState } from "react";
-import { FaBars, FaTimes, FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
+import { FaBars, FaTimes, FaFacebookF, FaTwitter, FaLinkedinIn, FaPlay } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
 import Slider from "./_components/SliderComponent";
 import Navbar from "./_components/Navbar";
+import InfoCard from "./_components/InfoCard";
+import { TbLineDashed } from "react-icons/tb";
+import MissionInfo from "./_components/MissionInfo";
+import DiscoverSection from "./_components/DiscoverSection";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <main className="font-sans">
+    <main
+  className="font-sans bg-cover bg-center bg-no-repeat h-screen w-screen overflow-x-hidden"
+  style={{
+    backgroundImage: `url(/imgs/child-5.jpg)`,
+  }}
+>
       {/* Navbar */}
       {/* <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
         <div className="max-w-7xl mx-auto px-12 py-10 flex justify-between items-center">
@@ -59,23 +68,56 @@ export default function HomePage() {
       <Navbar/>
 
       <Slider/>
-      
+      <div className="grid grid-cols-3 justify-center  ">
+            <InfoCard title="Feed the Hungry" style="bg-orange-600" />
+            <InfoCard title="Rescue an Orphan" style="bg-gray-800" />
+            <InfoCard title="Free Education" style="bg-gray-800 bg-red-500" />
+            
+          </div>
+          
 
       {/* Mission Section */}
-      <section id="mission" className="py-16 bg-orange-200 text-center">
-        <h2 className="text-3xl font-bold mb-4">OUR MISSION</h2>
-        <p className="max-w-xl mx-auto mb-6 text-gray-700">
+      <section id="mission" className="  pt-32  bg-orange-200 text-center">
+        <div className="grid grid-cols-2 mx-10 ">
+
+        <div className=" px-8">
+          <div className="relative flex items-center justify-center h-[26rem]">
+            <div className="absolute flex hover:scale-110 group border border-transparent hover:border-black cursor  items-center justify-center duration-150 bg-white size-16 rounded-full z-10">
+              <FaPlay className=" z-10 size-3"/>
+            </div>
+
+<Image fill src='/imgs/child-2.jpg' alt="" className="object-cover"/>
+          </div>
+        </div>
+        <div className="pt-16 px-12">
+
+        <h2 className="text-7xl text-left font-bold mb-4 font-bebas">OUR MISSION</h2>
+        <p className="  text-gray-700 text-left leading-7">
           We are on a mission to empower children and families by providing access to education,
+          food, and essential resources in underprivileged regions.We are on a mission to empower children and families by providing access to education,
           food, and essential resources in underprivileged regions.
         </p>
-        <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 text-xl font-bold">
-          <div>15<br /><span className="text-sm font-medium">Years of service</span></div>
-          <div>392<br /><span className="text-sm font-medium">Volunteers</span></div>
-          <div>3,298<br /><span className="text-sm font-medium">Children helped</span></div>
-          <div>1,212<br /><span className="text-sm font-medium">Schools built</span></div>
+        
+        
         </div>
+        <div className="col-span-2 block w-full pb-12 pt-12  ">
+
+        <div className="grid  grid-cols-2 sm:grid-cols-4 gap-4 text-xl font-bold">
+          
+          <MissionInfo digit={15} desc="Years of service"/>
+          <MissionInfo digit={392} desc="Volunteers"/>
+          <MissionInfo digit={3298} desc="Children helped"/>
+          <MissionInfo digit={1212} desc="Schools built"/>
+          
+        </div>
+        </div>
+        </div>
+        
       </section>
 
+
+      {/* Discover Section */}
+      <DiscoverSection/>
       {/* Donation Prompt */}
       <section className="py-12 bg-orange-600 text-white text-center">
         <h3 className="text-2xl font-bold">Make A Donation Now! You May Change Lives Forever</h3>
