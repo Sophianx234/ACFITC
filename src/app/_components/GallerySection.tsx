@@ -33,9 +33,9 @@ export default function GallerySection() {
         <h2 className="text-5xl font-bold text-black font-bebas uppercase">
           Our Work in Action
         </h2>
-        <p className="mt-4 max-w-2xl mx-auto text-gray-600 font-inter">
-          A glimpse into the projects, events, and initiatives we’ve carried out
-          to help communities in need.
+        <p className="mt-4     mx-auto text-gray-600 font-inter">
+          A glimpse into the projects, events, and initiatives  we’ve carried out
+          <br />to help communities in need.
         </p>
       </div>
 

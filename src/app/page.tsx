@@ -14,6 +14,7 @@ import { RiDoubleQuotesL } from "react-icons/ri";
 import { ImQuotesRight } from "react-icons/im";
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 import GallerySection from "./_components/GallerySection";
+import Footer from "./_components/Footer";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -160,7 +161,7 @@ export default function HomePage() {
 
       {/* Testimonials */}
       <section className="py-16 pb-24 bg-orange-200/70 text-center">
-        <h2 className="text-5xl tracking-wide font-bebas font-bold mb-10">TESTIMONIAL</h2>
+        <h2 className="text-5xl tracking-wide font-bebas font-bold mb-10">TESTIMONIALS</h2>
         <div className="grid sm:grid-cols-3 gap-4 max-w-6xl mx-auto">
           {[1, 2, 3].map((id) => (
             <div key={id} className="bg-white relative flex flex-col justify-center items-center p-6 size-fit rounded-lg shadow">
@@ -190,10 +191,10 @@ export default function HomePage() {
         <h2 className="text-7xl font-bold mb-12 font-bebas">CONTACT US</h2>
         <form className="max-w-xl mx-auto space-y-4 text-left">
           <div className="grid grid-cols-1 sm:grid-cols-[1.2fr_1fr] gap-4">
-            <input type="text" placeholder="Name" className="p-3 focus:border-orange-600 py-4 w-full border border-gray-400 rounded" />
-            <input type="email" placeholder="Email" className="p-3 w-full border border-gray-400 rounded" />
+            <input type="text" placeholder="Name" className="p-3  focus:outline-none focus:border-orange-600 py-4 w-full border border-gray-400 rounded" />
+            <input type="email" placeholder="Email" className="p-3 w-full border focus:outline-none focus:border-orange-600 border-gray-400 rounded" />
           </div>
-          <textarea placeholder="Write your message" rows={10} className="w-full p-3 border-gray-400 border rounded"></textarea>
+          <textarea placeholder="Write your message" rows={10} className="w-full focus:outline-none focus:border-orange-600 p-3 border-gray-400 border rounded"></textarea>
           <div className="grid grid-cols-[1fr_.6fr]  ">
             <div></div>
 
@@ -203,35 +204,7 @@ export default function HomePage() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-black text-white py-10 text-sm">
-        <div className="max-w-7xl mx-auto px-4 grid sm:grid-cols-4 gap-6">
-          <div>
-            <h4 className="font-bold mb-2">About Us</h4>
-            <p>We are a non-profit foundation focused on transforming lives through education and health.</p>
-          </div>
-          <div>
-            <h4 className="font-bold mb-2">Programs</h4>
-            <ul>
-              <li>Education</li>
-              <li>Feeding Program</li>
-              <li>Medical Aid</li>
-              <li>Child Sponsorship</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-2">Stay Connected</h4>
-            <input type="email" placeholder="Your Email" className="p-2 w-full text-black rounded" />
-            <button className="bg-orange-600 px-4 py-2 mt-2 rounded">Subscribe</button>
-          </div>
-          <div>
-            <h4 className="font-bold mb-2">Follow Us</h4>
-            <div className="flex gap-3 text-orange-600">
-              <FaFacebookF /><FaTwitter /><FaLinkedinIn />
-            </div>
-          </div>
-        </div>
-        <p className="text-center mt-6 text-gray-400">&copy; 2025 Charity Foundation. All rights reserved.</p>
-      </footer>
+      <Footer/>
     </main>
   );
 }
