@@ -3,6 +3,7 @@ import { useState } from "react";
 import { FaBars, FaTimes, FaFacebookF, FaTwitter, FaLinkedinIn } from "react-icons/fa";
 import Image from "next/image";
 import Link from "next/link";
+import Slider from "./_components/SliderComponent";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -11,8 +12,8 @@ export default function HomePage() {
     <main className="font-sans">
       {/* Navbar */}
       <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
-        <div className="max-w-7xl mx-auto px-4 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-orange-600">FOUNDATION</h1>
+        <div className="max-w-7xl mx-auto px-12 py-10 flex justify-between items-center">
+          <h1 className="text-3xl tracking-tighter font-amatic font-bold text-orange-600 uppercase">Center for Islam and culture</h1>
           <div className="md:hidden">
             <button onClick={() => setMenuOpen(!menuOpen)}>
               {menuOpen ? <FaTimes size={24} /> : <FaBars size={24} />}
@@ -38,17 +39,26 @@ export default function HomePage() {
       </nav>
 
       {/* Hero Section */}
-      <section className="pt-28 bg-orange-100 text-center">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-4xl font-bold text-orange-600 mb-2">Education</h2>
-          <p className="text-2xl font-semibold">for Brighter Future</p>
-          <div className="flex justify-center gap-4 mt-6">
-            <button className="bg-orange-600 text-white px-6 py-3 rounded-lg">Feed the Hungry</button>
-            <button className="bg-gray-800 text-white px-6 py-3 rounded-lg">Rescue an Orphan</button>
-            <button className="bg-red-500 text-white px-6 py-3 rounded-lg">Free Education</button>
+      {/* <section className="pt-28 bg-orange-100 text-center md:text-left ">
+        <div className="bg-[url(/imgs/child-5.jpg)] bg-cover bg-center h-dvh flex flex-col justify-center items-center text-white">
+
+        <div className="md:grid grid-cols-2 w-full h-full  px-8">
+          <div className=" self-center">
+
+          <h2 className="text-4xl md:text-7xl font-bold text-orange-600 font-archivo mb-2">Education</h2>
+          <p className="text-2xl font-semibold font-caveat">for Brighter Future</p>
           </div>
+          <div >
+
+          </div>
+          
         </div>
-      </section>
+        </div>
+      </section> */}
+      <div className="h-dvh">
+
+      <Slider/>
+      </div>
 
       {/* Mission Section */}
       <section id="mission" className="py-16 bg-orange-200 text-center">
