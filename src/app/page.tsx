@@ -13,6 +13,7 @@ import CharityServices from "./_components/CharityServices";
 import { RiDoubleQuotesL } from "react-icons/ri";
 import { ImQuotesRight } from "react-icons/im";
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
+import GallerySection from "./_components/GallerySection";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -158,8 +159,8 @@ export default function HomePage() {
       </section>
 
       {/* Testimonials */}
-      <section className="py-16 h-dvh bg-orange-200 text-center">
-        <h2 className="text-3xl font-bold mb-10">TESTIMONIAL</h2>
+      <section className="py-16 pb-24 bg-orange-200/70 text-center">
+        <h2 className="text-5xl tracking-wide font-bebas font-bold mb-10">TESTIMONIAL</h2>
         <div className="grid sm:grid-cols-3 gap-4 max-w-6xl mx-auto">
           {[1, 2, 3].map((id) => (
             <div key={id} className="bg-white relative flex flex-col justify-center items-center p-6 size-fit rounded-lg shadow">
@@ -181,31 +182,23 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Blog Section */}
-      <section id="blog" className="py-16 text-center">
-        <h2 className="text-3xl font-bold mb-6">OUR BLOG</h2>
-        <div className="grid sm:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {[1, 2].map((id) => (
-            <div key={id} className="bg-white shadow-lg p-4 rounded">
-              <Image src="/hero.jpg" alt="Blog" width={600} height={300} className="rounded mb-4" />
-              <h3 className="text-xl font-bold text-orange-600">How to Invest in Investing Company</h3>
-              <p className="text-sm text-gray-700 mt-2">Learn how to contribute meaningfully and transform communities.</p>
-              <Link href="#" className="text-orange-600 font-semibold mt-2 block">Read More</Link>
-            </div>
-          ))}
-        </div>
-      </section>
-
+      {/* Gallery Section */}
+      <GallerySection/>
+      
       {/* Contact Form */}
-      <section id="contact" className="py-16 bg-gray-100 text-center">
-        <h2 className="text-3xl font-bold mb-6">CONTACT US</h2>
-        <form className="max-w-2xl mx-auto space-y-4 text-left">
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-            <input type="text" placeholder="Name" className="p-3 w-full border rounded" />
-            <input type="email" placeholder="Email" className="p-3 w-full border rounded" />
+      <section id="contact" className="py-16 pt-24 bg-slate-100 text-center">
+        <h2 className="text-7xl font-bold mb-12 font-bebas">CONTACT US</h2>
+        <form className="max-w-xl mx-auto space-y-4 text-left">
+          <div className="grid grid-cols-1 sm:grid-cols-[1.2fr_1fr] gap-4">
+            <input type="text" placeholder="Name" className="p-3 focus:border-orange-600 py-4 w-full border border-gray-400 rounded" />
+            <input type="email" placeholder="Email" className="p-3 w-full border border-gray-400 rounded" />
           </div>
-          <textarea placeholder="Write your message" rows={5} className="w-full p-3 border rounded"></textarea>
-          <button className="bg-orange-600 text-white px-6 py-2 rounded">Send Message</button>
+          <textarea placeholder="Write your message" rows={10} className="w-full p-3 border-gray-400 border rounded"></textarea>
+          <div className="grid grid-cols-[1fr_.6fr]  ">
+            <div></div>
+
+          <button className="bg-orange-600  text-white px-7 py-4 rounded">Send Message</button>
+          </div>
         </form>
       </section>
 
