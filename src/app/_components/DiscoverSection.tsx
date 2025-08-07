@@ -30,40 +30,31 @@ export default function DiscoverSection() {
         description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quis, nemo explicabo
             cupiditate vero fugiat sit eius sequi."
       />
+      <DiscoverCard
+        title="Feeding Children in Africa"
+        src="/imgs/child-6.jpg"
+        reverse={true}
+        stats={[
+          { number: 3298, label: "Schools" },
+          { number: 38, label: "Children" },
+          // Add more if needed
+        ]}
+        description="Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam quis, nemo explicabo
+            cupiditate vero fugiat sit eius sequi."
+      />
+<DiscoverCard
+  title="Health & Medical Support"
+  description="We provide free healthcare outreach, medication, and hygiene education to underserved communities."
+  src="/imgs/med-1.jpg" // Replace with your actual image
+  stats={[
+    { number: 12, label: "Medical Camps" },
+    { number: 820, label: "Patients Treated" },
+    { number: 150, label: "Volunteers Engaged" },
+  ]}
+/>
 
       {/* Section 2: Feeding Children */}
-      <div className="grid md:grid-cols-2 gap-12 items-center">
-        <div className="order-2 md:order-1">
-          <h3 className="text-xl font-bold uppercase text-black mb-2">
-            Feeding Children in Africa
-          </h3>
-          <p className="text-gray-600 mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam
-            quis, nemo explicabo cupiditate vero fugiat sit eius sequi.
-          </p>
-          <div className="flex space-x-10">
-            <div>
-              <p className="text-3xl font-bold text-orange-600">3,298</p>
-              <hr className="border-t-2 border-gray-300 w-10 my-1" />
-              <p className="text-sm text-gray-700">Children</p>
-            </div>
-            <div>
-              <p className="text-3xl font-bold text-orange-600">38</p>
-              <hr className="border-t-2 border-gray-300 w-10 my-1" />
-              <p className="text-sm text-gray-700">Orphanage</p>
-            </div>
-          </div>
-        </div>
-        <div className="order-1 md:order-2">
-          <Image
-            src="/imgs/child-6.jpg"
-            alt="Orphan Child"
-            width={600}
-            height={400}
-            className="rounded-lg shadow-md object-cover w-full"
-          />
-        </div>
-      </div>
+      
     </section>
   );
 }

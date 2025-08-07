@@ -119,13 +119,19 @@ export default function HomePage() {
       {/* Discover Section */}
       <DiscoverSection/>
       {/* Donation Prompt */}
-      <section className="py-12 bg-orange-600 text-white text-center">
-        <h3 className="text-2xl font-bold">Make A Donation Now! You May Change Lives Forever</h3>
-        <button className="mt-4 bg-white text-orange-600 font-bold px-6 py-2 rounded-full">Donate Now</button>
+      <section className="py-12 bg-orange-600 flex items-center justify-center h-96 text-white text-center">
+        <div className="grid grid-cols-1">
+
+        <h3 className="text-3xl px-32 font-anton font-bold">Make A Donation Now! <br /> You May Change Lives Forever</h3>
+        <button className="mt-4 bg-white text-orange-600 font-bold px-6 mx-8 border rounded-sm border-gray-200 py-5 shadow">Donate Now</button>
+        </div>
+      </section>
+      <section className="bg-white h-dvh">
+
       </section>
 
       {/* Leadership Section */}
-      <section id="leadership" className="py-16 text-center">
+      <section id="leadership" className="py-16  text-center">
         <h2 className="text-3xl font-bold mb-8">OUR LEADERSHIP</h2>
         <div className="grid sm:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {[1, 2, 3].map((id) => (
