@@ -164,7 +164,7 @@ export default function HomePage() {
               <BiSolidQuoteAltLeft className="size-9 text-orange-600 absolute left-2 top-0"/>
               <BiSolidQuoteAltRight className="size-9 text-orange-600 absolute right-2 bottom-0"/>
               <p className="text-lg px-3 text-gray-600">
-                "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae dicta magnam nam, sed debitis quo tenetur ullam sunt laudantium harum esse exercitationem excepturi. Voluptatibus enim aperiam odit, deserunt libero a quos nihil?"
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Recusandae dicta magnam nam, sed debitis quo tenetur ullam sunt laudantium harum esse exercitationem excepturi. Voluptatibus enim aperiam odit, deserunt libero a quos nihil?
               </p>
               <div className="flex flex-col items-center justify-center mt-4">
 
