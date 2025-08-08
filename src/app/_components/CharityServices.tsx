@@ -1,9 +1,9 @@
 "use client";
 
-import { FaPiggyBank, FaHandsHelping } from "react-icons/fa";
-import { MdHealthAndSafety, MdVolunteerActivism } from "react-icons/md";
-import { GiHeartPlus, GiReceiveMoney } from "react-icons/gi";
+import { FaHandsHelping, FaPiggyBank } from "react-icons/fa";
 import { FaBowlRice } from "react-icons/fa6";
+import { GiReceiveMoney } from "react-icons/gi";
+import { MdHealthAndSafety, MdVolunteerActivism } from "react-icons/md";
 
 const services = [
   {

@@ -1,7 +1,5 @@
 "use client";
 
-import Image from "next/image";
-import MissionInfo from "./MissionInfo";
 import DiscoverCard from "./DiscoverCard";
 
 export default function DiscoverSection() {

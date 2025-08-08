@@ -1,20 +1,16 @@
 "use client";
-import { useState } from "react";
-import { FaBars, FaTimes, FaFacebookF, FaTwitter, FaLinkedinIn, FaPlay } from "react-icons/fa";
 import Image from "next/image";
-import Link from "next/link";
-import Slider from "./_components/SliderComponent";
-import Navbar from "./_components/Navbar";
-import InfoCard from "./_components/InfoCard";
-import { TbLineDashed } from "react-icons/tb";
-import MissionInfo from "./_components/MissionInfo";
-import DiscoverSection from "./_components/DiscoverSection";
-import CharityServices from "./_components/CharityServices";
-import { RiDoubleQuotesL } from "react-icons/ri";
-import { ImQuotesRight } from "react-icons/im";
+import { useState } from "react";
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
-import GallerySection from "./_components/GallerySection";
+import { FaFacebookF, FaLinkedinIn, FaPlay, FaTwitter } from "react-icons/fa";
+import CharityServices from "./_components/CharityServices";
+import DiscoverSection from "./_components/DiscoverSection";
 import Footer from "./_components/Footer";
+import GallerySection from "./_components/GallerySection";
+import InfoCard from "./_components/InfoCard";
+import MissionInfo from "./_components/MissionInfo";
+import Navbar from "./_components/Navbar";
+import Slider from "./_components/SliderComponent";
 
 export default function HomePage() {
   const [menuOpen, setMenuOpen] = useState(false);
