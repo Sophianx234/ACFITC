@@ -3,6 +3,7 @@ import Image from "next/image";
 import { useState } from "react";
 import { BiSolidQuoteAltLeft, BiSolidQuoteAltRight } from "react-icons/bi";
 import { FaFacebookF, FaLinkedinIn, FaPlay, FaTwitter } from "react-icons/fa";
+import BackgroundImg from "./_components/BackgroundImg";
 import CharityServices from "./_components/CharityServices";
 import DiscoverSection from "./_components/DiscoverSection";
 import Footer from "./_components/Footer";
@@ -17,11 +18,13 @@ export default function HomePage() {
 
   return (
     <main
-  className="font-sans bg-cover bg-center bg-no-repeat h-screen w-screen overflow-x-hidden"
+  className="font-sans bg-cover bg-center  bg-no-repeat h-screen w-full "
   style={{
     backgroundImage: `url(/imgs/child-5.jpg)`,
+    backgroundAttachment: "fixed"
   }}
 >
+    <BackgroundImg/>
       {/* Navbar */}
       {/* <nav className="bg-white shadow-md fixed top-0 left-0 w-full z-50">
         <div className="max-w-7xl mx-auto px-12 py-10 flex justify-between items-center">
