@@ -1,36 +1,97 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ACFITC 🏢
 
-## Getting Started
+<div align="center">
+  <img src="https://res.cloudinary.com/dtytb8qrc/image/upload/v1764886155/acfitc_whaa0l.png" alt="ACFITC — Landing Page" width="800" />
+</div>
 
-First, run the development server:
+**ACFITC — Your Gateway to Modern, Feature‑Rich Real Estate Showcase.**  
+ACFITC is a sleek real‑estate/front‑end platform template built to beautifully present properties, services, and realty agency portfolios through a modern, immersive landing page.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+---
+
+## ✨ Highlights
+
+- Clean, professional landing page designed to showcase properties or real estate services elegantly.  
+- Perfect for agencies, property listings, portfolios, or MVP real‑estate websites.  
+- Easy to adapt: update images, texts, branding — plug and play your own content.  
+- Built over modern web stacks allowing scalability and maintainability.
+
+---
+
+## 🧰 Tech Stack
+
+- **Frontend:** Modern JavaScript/TypeScript framework (React / Next.js or similar)  
+- **Styling:** Fully customizable CSS framework or custom styling  
+- **Responsive Design:** Optimized for desktop & mobile
+
+---
+
+## 📁 Project Structure
+
+```
+/public
+/src
+/components
+/pages
+/assets
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*(Adjust depending on your actual repo structure.)*
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Getting Started
 
-## Learn More
+```bash
+git clone https://github.com/Sophianx234/ACFITC.git
+cd ACFITC
+npm install
+npm run dev
+```
 
-To learn more about Next.js, take a look at the following resources:
+Visit:  
+`http://localhost:3000`
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+---
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🎯 Usage & Customization
 
-## Deploy on Vercel
+1. Replace placeholder images in `/public` or `/assets`.
+2. Update text content to match your agency or property.
+3. Customize colors, fonts, and branding.
+4. Add new pages: About, Contact, Property Details, Blog, etc.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🛠️ Why ACFITC?
+
+| Benefit | Meaning |
+|--------|---------|
+| **Stylish presentation** | A modern UI that instantly conveys professionalism |
+| **Customizable** | Swap images, branding, and text easily |
+| **Modern stack** | Built with scalable, maintainable tools |
+| **Perfect for real‑estate showcases** | Ideal foundation for agencies or property portfolios |
+
+---
+
+## 📄 License
+
+Add your license here (e.g., MIT).
+
+---
+
+## 👥 Contributing
+
+- Fork the repo  
+- Commit changes  
+- Open a Pull Request  
+
+---
+
+## 📬 Contact
+
+Add your contact details or socials here.
+
+---
+
+Thank you for using ACFITC! 🌟
