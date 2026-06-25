@@ -1,97 +1,47 @@
-# ACFITC 🏢
-
 <div align="center">
-  <img src="https://res.cloudinary.com/dtytb8qrc/image/upload/v1764886155/acfitc_whaa0l.png" alt="ACFITC — Landing Page" width="800" />
+  <h1 align="center">AFCITC 🌍</h1>
+  <p align="center">
+    <strong>A responsive, mobile-first charity web platform engineered for secure donation processing and initiative showcasing.</strong>
+  </p>
+  <p align="center">
+    <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB" alt="React" />
+    <img src="https://img.shields.io/badge/Donation_API-0055FF?style=for-the-badge&logo=stripe&logoColor=white" alt="Donation API" />
+    <img src="https://img.shields.io/badge/Mobile_First-38B2AC?style=for-the-badge&logo=css3&logoColor=white" alt="Mobile First CSS" />
+  </p>
 </div>
 
-**ACFITC — Your Gateway to Modern, Feature‑Rich Real Estate Showcase.**  
-ACFITC is a sleek real‑estate/front‑end platform template built to beautifully present properties, services, and realty agency portfolios through a modern, immersive landing page.
+<br />
 
----
+<div align="center">
+  <img src="https://res.cloudinary.com/dtytb8qrc/image/upload/c_scale,w_1200,q_auto,f_auto/v1764886155/acfitc_whaa0l.png" alt="AFCITC Landing Page Preview" width="100%" />
+</div>
 
-## ✨ Highlights
+<br />
 
-- Clean, professional landing page designed to showcase properties or real estate services elegantly.  
-- Perfect for agencies, property listings, portfolios, or MVP real‑estate websites.  
-- Easy to adapt: update images, texts, branding — plug and play your own content.  
-- Built over modern web stacks allowing scalability and maintainability.
+## 📖 Overview
 
----
+**AFCITC** is a modern, responsive web application engineered specifically for the non-profit sector. It provides a clean, accessible digital presence designed to highlight charitable initiatives, share community impact, and securely process incoming donations.
+
+Developed with a strict mobile-first methodology, the platform ensures that users interacting via mobile devices experience zero friction when browsing ongoing projects or interacting with the donation pipeline. 
+
+## ✨ Core Features
+
+* **Secure Donation Processing:** Integrated with reliable payment/donation APIs to ensure all financial contributions are processed securely and efficiently.
+* **Initiative Showcasing:** A dedicated, visually engaging project gallery that allows the organization to communicate its ongoing charity work and community impact.
+* **Mobile-First Fluidity:** The UI/UX architecture is optimized from the ground up for mobile touchpoints, guaranteeing a flawless experience across smartphones, tablets, and desktops.
+* **Accessible Typography & Design:** Built with high-contrast, readable design principles to ensure the platform is accessible to a broad and diverse demographic.
 
 ## 🧰 Tech Stack
 
-- **Frontend:** Modern JavaScript/TypeScript framework (React / Next.js or similar)  
-- **Styling:** Fully customizable CSS framework or custom styling  
-- **Responsive Design:** Optimized for desktop & mobile
+* **Frontend:** React 
+* **Styling Architecture:** Custom CSS / Utility-first framework (Mobile-First approach)
+* **Integrations:** Secure Donation / Payment Gateway APIs
 
----
+## 🚀 Local Deployment
 
-## 📁 Project Structure
+To run this application locally, ensure you have Node.js installed.
 
-```
-/public
-/src
-/components
-/pages
-/assets
-```
-
-*(Adjust depending on your actual repo structure.)*
-
----
-
-## 🚀 Getting Started
-
+**1. Clone the repository**
 ```bash
-git clone https://github.com/Sophianx234/ACFITC.git
-cd ACFITC
-npm install
-npm run dev
-```
-
-Visit:  
-`http://localhost:3000`
-
----
-
-## 🎯 Usage & Customization
-
-1. Replace placeholder images in `/public` or `/assets`.
-2. Update text content to match your agency or property.
-3. Customize colors, fonts, and branding.
-4. Add new pages: About, Contact, Property Details, Blog, etc.
-
----
-
-## 🛠️ Why ACFITC?
-
-| Benefit | Meaning |
-|--------|---------|
-| **Stylish presentation** | A modern UI that instantly conveys professionalism |
-| **Customizable** | Swap images, branding, and text easily |
-| **Modern stack** | Built with scalable, maintainable tools |
-| **Perfect for real‑estate showcases** | Ideal foundation for agencies or property portfolios |
-
----
-
-## 📄 License
-
-Add your license here (e.g., MIT).
-
----
-
-## 👥 Contributing
-
-- Fork the repo  
-- Commit changes  
-- Open a Pull Request  
-
----
-
-## 📬 Contact
-
-Add your contact details or socials here.
-
----
-
-Thank you for using ACFITC! 🌟
+git clone [https://github.com/sophianx243/AFCITC.git](https://github.com/sophianx243/AFCITC.git)
+cd AFCITC
